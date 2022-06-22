@@ -24,8 +24,20 @@ Nuestro publico objetivo seran las personas que les interesen los videojuegos y 
 
 - **Emiliano Di Grigoli:** 
 
-*Miembro del equipo*. Trabajo en un banco y tengo un comercio familiar. Me gusta escuchar música en mis ratos libres, ir al cine, jugar al fútbol y siempre me gusta estar aprendiendo cosas nuevas, por eso me decidí a dar mi primer paso y entender y aplicar lo que hace un programador web. :call_me_hand:
+Trabajo en un banco y tengo un comercio familiar. Me gusta escuchar música en mis ratos libres, ir al cine, jugar al fútbol y siempre me gusta estar aprendiendo cosas nuevas, por eso me decidí a dar mi primer paso y entender y aplicar lo que hace un programador web. :call_me_hand:
 
 - **Josue Trujillo:** 
 
-*Miembro del equipo*. Tengo 22 años, me gusta escuchar musica, los videojuegos, el cine y salir a pasear. Trabajo en un emprendimiento de ropa. Soy nuevo en la programacion y me intereso desde hace tiempo, tenia la curiosidad de como funcionaban las cosas desde el otro lado y como se desarrollaban, cada vez aprendo mas sobre este mundo y mi interes y curiosidad aumentan.
+Tengo 22 años, me gusta escuchar musica, los videojuegos, el cine y salir a pasear. Trabajo en un emprendimiento de ropa. Soy nuevo en la programacion y me intereso desde hace tiempo, tenia la curiosidad de como funcionaban las cosas desde el otro lado y como se desarrollaban, cada vez aprendo mas sobre este mundo y mi interes y curiosidad aumentan.
+
+- **Santiago Mitidiero:** 
+
+Tengo 18 años, me gusta hacer deporte, escuchar musica y jugar a los jueguitos. Soy nuevo en la programación pero siempre me interesó como funcionaba todo mas allá de lo que veia, por eso decidí entrar al curso para aprender un poco como funciona todo lo que siempre me genero curiosidad
+
+- **Tobias De Losa:**
+
+Tengo 19 años, me gusta jugar al futbol y escuchar musica. No tengo estudios previos acerca de la programacion, y decidi ingresar en este mundo, inestigué acerca de lo que trataba todo esto y me llamo mucho la atención.
+
+## Trello:
+
+https://trello.com/b/kgM1zgNO/tablero-grupo-9
