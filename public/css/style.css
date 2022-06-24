@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ------------------HOME------------------ */
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul.desktop {
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+main section.main-product {
+    display: flex;
+    position: relative;
+}
+
+main section.main-product img.img-mobile {
+    width: 100%;
+}
+
+main section.main-product img.img-desktop {
+    width: 100%;
+    display: none;
+}
+
+main section.main-product div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    text-align: left;
+    font-size: .9rem;
+    margin: 10px 7px;
+}
+
+main section.main-product div p,
+main section.main-product div a {
+    font-weight: bold;
+}
+
+main section.main-product div a {
+    color: white;
+    font-size: .7rem;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 2px 5px;
+}
+
+main h2.products-text {
+    text-align: center;
+    margin: 3px;
+}
+
+main section.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.products article {
+    margin: 5px;
+    width: 70%;
+    position: relative;
+}
+
+main section.products article div.details {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+}
+
+main section.products article div.details a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+main section.products article div.foto {      /*SIMULACION DE FOTO DE PRODUCTO*/
+    background-color: aquamarine;
+    width: 100%;
+    height: 300px;
+}
+
+main section.products article div.foto2 {      /*SIMULACION DE FOTO DE PRODUCTO*/
+    background-color: greenyellow;
+    width: 100%;
+    height: 300px;
+}
+
+footer figure {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+}    
+
+footer section.links {
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 5px;
+}
+
+footer section.links li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+}
+
+footer section.links li a {
+    margin: 10px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) { /*TABLET*/
+
+    /* ------------------HOME------------------ */
+    nav ul.desktop {
+        display: inline-block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    main section.main-product img.img-mobile {
+        width: 100%;
+        display: none;
+    }
+    
+    main section.main-product img.img-desktop {
+        width: 100%;
+        display: block;
+    }
+
+    main section.main-product div {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    main section.main-product div a {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    main section.products {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    main section.products article {
+        max-width: 45%;
+        margin: 10px auto;
+    }
+
+}
+
+@media (min-width: 996px) { /*DESKTOP*/
+
+    /* ------------------HOME------------------ */
+    header img {
+        width: 125px;
+    }
+
+    main section.main-product div {
+        font-size: 2rem;
+    }
+    
+    main section.main-product div a {
+        font-size: 1.8rem;
+    }
+
+    main section.products {
+        flex-direction: row;
+    }
+
+    main section.products article {
+        max-width: 30%;
+    }
+
+    main section.products article div.details {
+        font-size: 1.3rem;
+    }
+
+    footer section.links {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* ------------------HOME------------------ */
+    footer img {
+        width: 150px;
+    }
+}
