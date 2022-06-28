@@ -73,6 +73,19 @@ aside figure img {
     margin-bottom: 0;
 }
 
+.container .localidad-cp {
+    display: flex;
+}
+
+.container .localidad-cp input.localidad {
+    width: 65%;
+    margin: 0 auto;
+}
+.container .localidad-cp input.cp {
+    width: 35%;
+    margin: 0 auto;
+}
+
 .container input {
     display: block;
     border: 1px solid #d2d8e9;

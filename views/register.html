@@ -31,12 +31,17 @@
             </div>
             <form action="#">
                 <div class="nombre-apellido">
-                    <input type="text" name="apellido" id="nombre" placeholder="Nombre">
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <input type="text" name="apellido" placeholder="Nombre">
+                    <input type="text" name="apellido" placeholder="Apellido">
                 </div>
-                <input type="email" name="email" id="email" placeholder="Correo Electronico">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input type="password" name="password2" id="password2" placeholder="Repetir Contraseña">
+                <input type="email" name="email" placeholder="Correo Electronico">
+                <div class="localidad-cp">
+                    <input type="text" name="localidad" class="localidad" placeholder="Localidad">
+                    <input type="text" name="codigoPostal" class="cp" placeholder="C.P.">
+                </div>
+                <input type="text" name="direccion" placeholder="Dirección">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password2" placeholder="Repetir Contraseña">
                 <input type="submit" value="Registrarse" class="submit">
             </form>
         </div>
