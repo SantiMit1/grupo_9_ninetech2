@@ -201,10 +201,34 @@ footer section.links li a {
 
     nav ul.desktop {
         display: inline-block;
+        position: relative;
     }
 
     nav ul {
         display: none;
+    }
+
+    nav ul.desktop li a {
+        color: #a0a0a0;
+        transition: .3s;
+    }
+
+    nav ul.desktop li a:hover {
+        color: white;
+    }
+
+    nav ul.desktop li a::after {
+        content: "";
+        display: block;
+        background-color: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        transition: .3s;
+    }
+
+    nav ul.desktop li a:hover::after {
+        width: 100%;
     }
 
     nav form {
@@ -284,6 +308,11 @@ footer section.links li a {
     
     main section.main-product div a {
         font-size: 1.8rem;
+        transition: font-size .2s;
+    }
+
+    main section.main-product div a:hover {
+        font-size: 1.85rem;
     }
 
     main section.categories {
