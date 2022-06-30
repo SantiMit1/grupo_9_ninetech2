@@ -111,6 +111,11 @@ aside figure img {
     font-weight: bold;
     padding: 13px 26px;
     font-family: 'Roboto Condensed', sans-serif;
+    transition: .1s;
+}
+
+.container .submit:hover {
+    background-color: #2678c4;
 }
 
 .container .remember input {

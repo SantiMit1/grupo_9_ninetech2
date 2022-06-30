@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul.desktop {
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav form {
+    display: none;
+}
+
+footer figure {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+}    
+
+footer section.links {
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 5px;
+}
+
+footer section.links li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+}
+
+footer section.links li a {
+    margin: 10px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) { /*TABLET*/
+
+    nav ul.desktop {
+        display: inline-block;
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.desktop li a {
+        color: black;
+        transition: .3s;
+    }
+
+    nav ul.desktop li a:hover {
+        color: black;
+    }
+
+    nav ul.desktop li a::after {
+        content: "";
+        display: block;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+        transition: .3s;
+    }
+
+    nav ul.desktop li a:hover::after {
+        width: 100%;
+    }
+
+    nav form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+    nav form input {
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    nav form button {
+        font-size: 1em;
+        background-color: transparent;
+        border: none;
+        color: black;
+        margin-left: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) { /*DESKTOP*/
+
+    header img {
+        width: 150px;
+    }
+
+    footer section.links {
+        font-size: 1.5rem;
+    }
+    
+    footer img {
+        width: 150px;
+    }
+
+}
+
+@media (min-width: 1360px) {
+
+    nav ul.desktop {
+        font-size: 1.2em;
+    }
+
+}
