@@ -41,6 +41,111 @@ nav form {
     display: none;
 }
 
+h3.titulo {
+    text-align: center;
+    margin: 10px;
+}
+
+section.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+section.products article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+section.products article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+section.products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.products div.details {
+    margin-bottom: 10px;
+}
+
+section.products div input {
+    width: 30px;
+    text-align: center;
+    padding: 3px 0;
+}
+
+section.products article img {
+    width: 150px;
+    height: 100px;
+}
+
+section.products button {
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+section.payment {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+section.payment article {
+    width: 100%;
+    margin: 15px auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+section.payment article p {
+    margin-bottom: 10px;
+}
+
+section.payment article div {
+    border-top: 1px solid black
+}
+
+section.payment p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+section.payment p.total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.payment button {
+    background-color: rgb(127, 212, 0);
+    color: black;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
 footer figure {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
