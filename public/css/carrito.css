@@ -103,7 +103,6 @@ section.products div input {
 
 section.products article img {
     width: 150px;
-    height: 100px;
 }
 
 section.products article div.product-name {
@@ -296,7 +295,6 @@ footer section.links li a {
     }
 
     section.payment form select {
-        padding: 10px 50px;
         text-align: center;
     }
 
@@ -320,6 +318,16 @@ footer section.links li a {
         width: 60%;
     }
 
+    section.payment form {
+        flex-direction: row;
+        align-items: stretch;
+        width: 90%;
+    }
+
+    section.payment form article {
+        width: 27%;
+    }
+
 }
 
 @media (min-width: 1360px) {
@@ -334,7 +342,6 @@ footer section.links li a {
 
     section.payment form {
         font-size: 1.1em;
-        width: 50%;
     }
 
     section.products article:first-child {
