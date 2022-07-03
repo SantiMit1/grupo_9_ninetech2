@@ -41,6 +41,11 @@ nav form {
     display: none;
 }
 
+hr {
+    margin: 35px auto;
+    width: 100%;
+}
+
 h3.titulo {
     text-align: center;
     margin: 10px;
@@ -52,7 +57,7 @@ section.products {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto;
     border: 1px solid black;
 }
 
@@ -61,37 +66,55 @@ section.products article {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 50px;
+    margin: 0 auto;
     width: 100%;
 }
 
-section.products article:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+section.products article:first-child {
+    margin-top: 35px;
 }
 
-section.products div {
+section.products article:last-child {
+    margin-bottom: 35px;
+}
+
+section.products div.details {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
 }
 
-section.products div.details {
-    margin-bottom: 10px;
+section.products div.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
 }
 
 section.products div input {
-    width: 30px;
     text-align: center;
     padding: 3px 0;
+    margin-left: 3px;
+    width: 40px;
 }
 
 section.products article img {
     width: 150px;
     height: 100px;
+}
+
+section.products article div.product-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+section.products article div.product-name h4 {
+    text-align: center;
 }
 
 section.products button {
@@ -100,11 +123,13 @@ section.products button {
     border: 1px solid white;
     padding: 3px 10px;
     border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
-section.payment {
+section.payment form {
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -112,9 +137,13 @@ section.payment {
     text-align: center;
 }
 
+section.payment hr {
+    margin: 15px auto;
+}
+
 section.payment article {
     width: 100%;
-    margin: 15px auto;
+    margin: 0 auto 15px;
     border: 1px solid black;
     padding: 10px;
 }
@@ -123,18 +152,19 @@ section.payment article p {
     margin-bottom: 10px;
 }
 
-section.payment article div {
-    border-top: 1px solid black
-}
-
 section.payment p {
     font-weight: bold;
     font-size: 1.3em;
 }
 
+section.payment span {
+    display: block;
+    margin: 5px auto;
+}
+
 section.payment p.total {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 section.payment button {
@@ -144,6 +174,13 @@ section.payment button {
     padding: 3px 10px;
     border-radius: 5px;
     font-size: 1.1em;
+    cursor: pointer;
+}
+
+section.payment select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 70%;
 }
 
 footer figure {
@@ -233,6 +270,36 @@ footer section.links li a {
         margin-left: 5px;
     }
 
+    section.products {
+        width: 70%;
+    }
+
+    section.products article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.products article div.product-name {
+        max-width: 90%;
+    }
+    
+    section.products article div.details {
+        width: 50%;
+    }
+    
+    section.products article div.price {
+        width: 50%;
+    }
+
+    section.payment form {
+        width: 60%;
+    }
+
+    section.payment form select {
+        padding: 10px 50px;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 1024px) { /*DESKTOP*/
@@ -249,12 +316,41 @@ footer section.links li a {
         width: 150px;
     }
 
+    section.products {
+        width: 60%;
+    }
+
 }
 
 @media (min-width: 1360px) {
 
     nav ul.desktop {
         font-size: 1.2em;
+    }
+
+    section.products {
+        width: 50%;
+    }
+
+    section.payment form {
+        font-size: 1.1em;
+        width: 50%;
+    }
+
+    section.products article:first-child {
+        margin-top: 10px;
+    }
+    
+    section.products article:last-child {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin: 10px auto;
+    }
+
+    hr.divisor {
+        margin: 35px auto;
     }
 
 }
