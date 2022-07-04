@@ -74,7 +74,7 @@ footer section.links li a {
 
 main .product-specification {
     background-color: #EEEEEE;
-    margin: 2%;
+    margin: 0 0 0 auto;
     padding: 12px;
 }
 
@@ -236,7 +236,11 @@ select.seleccionador {
 
 
 section.descriptionSection {
-    margin: 60px;
+    margin: 0 60px;
+}
+
+section.descriptionSection p {
+    font-weight: bold;
 }
 
 
@@ -259,20 +263,14 @@ section.descriptionSection .descriptionSectionDetails .details span{
     margin-top: 3px;
 }
 
-.details .hrr {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    margin-bottom: 30px;
-    
-}
 
-.details hr {
+hr {
     width: 100%;
+    margin: 20px 0;
 }
 
 .descriptionSectionCompatibility hr {
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -424,7 +422,6 @@ section.similarProducts .similarProd a:hover {
     }
 
     .contenedor .img-container img{
-        height: 400px;
         width: 400px;
         transition: all 500ms;
     }
@@ -435,6 +432,10 @@ section.similarProducts .similarProd a:hover {
 
     div.product-tittle {
         display: none;
+    }
+
+    main .product-specification .price-product {
+        margin-top: 50px;
     }
 
 }
@@ -454,9 +455,16 @@ section.similarProducts .similarProd a:hover {
     }
 
     .contenedor .img-container img{
-        height: 500px;
         width: 500px;
         margin: 0 auto;
+    }
+
+    main .product-specification  {
+        margin: 0;
+    }
+
+    main .product-specification .price-product {
+        margin-top: 80px;
     }
 
 }
