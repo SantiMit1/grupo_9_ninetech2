@@ -82,7 +82,7 @@ main .product-specification {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .main-section img {
@@ -96,8 +96,8 @@ main .product-specification {
 
 .tittleDesk {
     margin-top: 50px;
-    margin-left: 70px;
     display: none;
+    text-align: center;
 }
 
 .product-tittle h2 {
@@ -162,9 +162,9 @@ main .product-specification {
 }
 
 .descuento strong {
-    padding: 3px;
+    padding: 5px;
     background-color: #96C817;
-    border-radius: 20%;
+    border-radius: 5px;
     font-size: 14px;
 }
 
@@ -189,7 +189,8 @@ div.payMP .button{
     background-color: rgb(67, 67, 160);
     color: rgb(255, 255, 255);
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 5px;
+    border: none;
 }
 
 .main-section .entrega {
@@ -292,14 +293,11 @@ section.similarProducts div.productListing{
 
 section.similarProducts .similarProd {
     padding: 20px;
-    min-width: 200px;
-    max-width: 300px;
+    width: 300px;
     text-align: center;
-}
-
-section.similarProducts .similarProd {
     background-color:#ffffff;
     margin: 30px;
+    transition: all .3s;
 }
 
 section.similarProducts .similarProd:hover {
@@ -312,16 +310,29 @@ section.similarProducts .similarProd img{
     min-height: 200px;
 }
 
-section.similarProducts .similarProd h3, section.similarProducts .similarProd p {
-    background-color: #EEEEEE;
+section.similarProducts .similarProd p {
     min-height: 60px;
+    padding: 10px;
 }
 
+section.similarProducts .similarProd .details {
+    background-color: #EEEEEE;
+    padding: 10px;
+}
 
+section.similarProducts .similarProd a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all .3s;
+}
 
-
-
-
+section.similarProducts .similarProd a:hover {
+    padding: 8px 23px;
+    font-size: 1.1em;
+}
 
 /*MEDIA QUERIES*/
 
@@ -400,7 +411,7 @@ section.similarProducts .similarProd h3, section.similarProducts .similarProd p 
     .contenedor {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .contenedor .img-container {
@@ -434,18 +445,18 @@ section.similarProducts .similarProd h3, section.similarProducts .similarProd p 
         font-size: 1.2em;
     }
 
-    .contenedor .img-container img{
-        width: auto;
+    .contenedor {
+        justify-content: space-around;
+    }
+
+    .contenedor .img-container {
+        margin: 10px auto;
     }
 
     .contenedor .img-container img{
         height: 500px;
         width: 500px;
-        position: absolute;
-        left: 150px;
-
+        margin: 0 auto;
     }
-
-
 
 }
