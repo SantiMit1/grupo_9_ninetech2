@@ -94,6 +94,12 @@ main .product-specification {
     padding: 5px;
 }
 
+.tittleDesk {
+    margin-top: 50px;
+    margin-left: 70px;
+    display: none;
+}
+
 .product-tittle h2 {
     margin-bottom: 10px;
 }
@@ -412,7 +418,13 @@ section.similarProducts .similarProd h3, section.similarProducts .similarProd p 
         transition: all 500ms;
     }
 
+    .tittleDesk {
+        display: block;
+    }
 
+    div.product-tittle {
+        display: none;
+    }
 
 }
 
