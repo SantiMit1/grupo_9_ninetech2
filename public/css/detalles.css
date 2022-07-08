@@ -20,26 +20,50 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
 nav ul.desktop {
     display: none;
 }
 
-nav li {
+nav ul {
+    position: relative;
+}
+
+nav li, ul.burger {
     list-style: none;
     margin: 5px;
     display: inline-block;
 }
 
-nav li a {
+nav li a, nav li label{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 nav form {
     display: none;
 }
+
+nav ul input:checked ~ li ul.burger {
+    display: flex;
+}
+
+ul.burger {
+    width: 97%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    z-index: 1;
+    text-align: right;
+    position: absolute;
+    left: -10%;
+    bottom: -370%;
+    background-color: black;
+}
+
 
 footer figure {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
