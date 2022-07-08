@@ -262,18 +262,18 @@ footer section.links li a {
     }
 
     nav ul.desktop li a {
-        color: white;
+        color: black;
         transition: .3s;
     }
 
     nav ul.desktop li a:hover {
-        color: white;
+        color: black;
     }
 
     nav ul.desktop li a::after {
         content: "";
         display: block;
-        background-color: white;
+        background-color: black;
         height: 3px;
         width: 0;
         left: 0;
