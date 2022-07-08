@@ -45,7 +45,33 @@ nav li a {
 }
 
 nav form {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+nav form input {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+nav form button {
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
+
+nav form.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 div#burger-menu {
@@ -264,25 +290,8 @@ footer section.links li a {
     }
 
     nav form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-    }
-
-    nav form input {
-        text-align: center;
-        border-radius: 5px;
-        font-size: 1em;
-        width: 100%;
-    }
-
-    nav form button {
-        font-size: 1em;
-        background-color: transparent;
-        border: none;
-        color: white;
-        margin-left: 5px;
+        visibility: visible;
+        opacity: 1;
     }
 
     div#burger-menu {
