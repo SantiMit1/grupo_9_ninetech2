@@ -27,18 +27,17 @@
             </ul>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-search"></i></a></li>
-                <li><label for="burger"><i class="fa-solid fa-bars"></i></label></li>
-                <input type="checkbox" name="burger" id="burger" style="visibility: hidden; position: fixed; z-index: -1;">
+                <li><a href="#" id="toggle-burger"><i class="fa-solid fa-bars"></i></a href="#"></li>
                 <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li>
-                    <ul class="burger">
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="/login">Crear cuenta</a></li>
-                        <li><a href="/register">Iniciar sesión</a></li>
-                    </ul>
-                </li>
             </ul>
         </nav>
+        <div id="burger-menu">
+            <ul class="burger">
+                <li><a href="#">Productos</a></li>
+                <li><a href="/login">Crear cuenta</a></li>
+                <li><a href="/register">Iniciar sesión</a></li>
+            </ul>
+        </div>
     </header>
     <main>
        <section class="main-section">
@@ -211,5 +210,6 @@
             </article>
         </section>
     </footer>
+    <script src="js/burger.js"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@ nav li, ul.burger {
     display: inline-block;
 }
 
-nav li a, nav li label {
+nav li a {
     text-decoration: none;
     color: white;
 }
@@ -48,22 +48,36 @@ nav form {
     display: none;
 }
 
-nav ul input:checked ~ li ul.burger {
+div#burger-menu {
+    height: auto;
+    max-height: 0;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    background-color: black;
+    transition: max-height .5s;
 }
 
-ul.burger {
-    width: 97%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    z-index: 1;
-    text-align: right;
-    position: absolute;
-    left: -10%;
-    bottom: -370%;
-    background-color: black;
+div#burger-menu.active {
+    max-height: 500px;
+}
+
+div#burger-menu ul.burger {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+div#burger-menu ul.burger.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+div#burger-menu ul.burger a {
+    color: white;
+    text-decoration: none;
 }
 
 main section.main-product {
@@ -271,7 +285,7 @@ footer section.links li a {
         margin-left: 5px;
     }
 
-    ul.burger {
+    div#burger-menu {
         display: none;
     }
 

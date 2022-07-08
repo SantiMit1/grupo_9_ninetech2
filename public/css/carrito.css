@@ -20,7 +20,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
 }
 
 nav ul.desktop {
@@ -37,33 +37,46 @@ nav li, ul.burger {
     display: inline-block;
 }
 
-nav li a, nav li label {
+nav li a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav form {
     display: none;
 }
 
-nav ul input:checked ~ li ul.burger {
+div#burger-menu {
+    height: auto;
+    max-height: 0;
+    width: 100%;
     display: flex;
-}
-
-ul.burger {
-    width: 97%;
-    display: none;
     flex-direction: column;
-    align-items: center;
-    display: none;
-    z-index: 1;
+    align-items: flex-end;
     text-align: right;
-    position: absolute;
-    left: -10%;
-    bottom: -370%;
-    background-color: black;
+    background-color: white;
+    transition: max-height .5s;
 }
 
+div#burger-menu.active {
+    max-height: 500px;
+}
+
+div#burger-menu ul.burger {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+div#burger-menu ul.burger.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+div#burger-menu ul.burger a {
+    color: black;
+    text-decoration: none;
+}
 
 hr {
     margin: 35px auto;
@@ -249,18 +262,18 @@ footer section.links li a {
     }
 
     nav ul.desktop li a {
-        color: black;
+        color: white;
         transition: .3s;
     }
 
     nav ul.desktop li a:hover {
-        color: black;
+        color: white;
     }
 
     nav ul.desktop li a::after {
         content: "";
         display: block;
-        background-color: black;
+        background-color: white;
         height: 3px;
         width: 0;
         left: 0;
@@ -289,8 +302,12 @@ footer section.links li a {
         font-size: 1em;
         background-color: transparent;
         border: none;
-        color: black;
+        color: white;
         margin-left: 5px;
+    }
+
+    div#burger-menu {
+        display: none;
     }
 
     section.products {
